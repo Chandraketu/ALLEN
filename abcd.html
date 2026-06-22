@@ -1,0 +1,485 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Shashank | Future Doctor & Singer</title>
+
+<script src="https://cdn.tailwindcss.com"></script>
+
+<link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css"/>
+
+<link href="https://unpkg.com/aos@2.3.4/dist/aos.css" rel="stylesheet">
+
+<style>
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+font-family:'Poppins',sans-serif;
+scroll-behavior:smooth;
+}
+
+body{
+background:#07131f;
+color:white;
+overflow-x:hidden;
+}
+
+.gradient-bg{
+background:linear-gradient(-45deg,#00c853,#2196f3,#8e24aa,#00c853);
+background-size:400% 400%;
+animation:gradient 10s ease infinite;
+}
+
+@keyframes gradient{
+0%{background-position:0% 50%;}
+50%{background-position:100% 50%;}
+100%{background-position:0% 50%;}
+}
+
+.glass{
+background:rgba(255,255,255,.08);
+backdrop-filter:blur(15px);
+border:1px solid rgba(255,255,255,.1);
+}
+
+.floating{
+animation:float 4s ease-in-out infinite;
+}
+
+@keyframes float{
+0%,100%{transform:translateY(0px);}
+50%{transform:translateY(-15px);}
+}
+
+.glow{
+box-shadow:0 0 20px rgba(0,200,83,.5);
+}
+
+.particle{
+position:absolute;
+border-radius:50%;
+background:rgba(255,255,255,.2);
+animation:move 20s linear infinite;
+}
+
+@keyframes move{
+from{
+transform:translateY(100vh);
+}
+to{
+transform:translateY(-100vh);
+}
+}
+
+.progress-bar{
+width:0%;
+transition:2s;
+}
+</style>
+</head>
+
+<body>
+
+<!-- PARTICLES -->
+<div class="fixed inset-0 -z-10 overflow-hidden">
+<div class="particle w-2 h-2 left-[10%]"></div>
+<div class="particle w-4 h-4 left-[20%]"></div>
+<div class="particle w-3 h-3 left-[40%]"></div>
+<div class="particle w-2 h-2 left-[60%]"></div>
+<div class="particle w-5 h-5 left-[80%]"></div>
+<div class="particle w-3 h-3 left-[90%]"></div>
+</div>
+
+<!-- NAVBAR -->
+<nav class="fixed top-0 w-full z-50 bg-black/40 backdrop-blur-lg">
+<div class="max-w-7xl mx-auto px-5 py-4 flex justify-between items-center">
+<h1 class="font-bold text-2xl text-green-400">SHASHANK</h1>
+
+<div class="hidden md:flex gap-8">
+<a href="#about">About</a>
+<a href="#education">Education</a>
+<a href="#skills">Skills</a>
+<a href="#singing">Singing</a>
+<a href="#contact">Contact</a>
+</div>
+</div>
+</nav>
+
+<!-- HERO -->
+<section class="min-h-screen flex items-center justify-center gradient-bg relative px-6">
+
+<div class="text-center max-w-4xl">
+
+<div class="floating inline-block mb-8">
+<div class="w-40 h-40 rounded-full bg-white/10 flex items-center justify-center border border-white/20">
+<i class="fas fa-user-doctor text-6xl text-white"></i>
+</div>
+</div>
+
+<h2 class="text-xl md:text-2xl mb-2">
+👋 Hello, I'm
+</h2>
+
+<h1 class="text-5xl md:text-7xl font-extrabold mb-6">
+SHASHANK
+</h1>
+
+<h3 id="typing" class="text-2xl md:text-4xl font-semibold text-yellow-300 h-16"></h3>
+
+<p class="max-w-2xl mx-auto mt-6 text-lg text-gray-100">
+Class 9 ICSE Student from Prayagraj, ALLEN Learner, Passionate Singer and Future Doctor dedicated to learning, growth and helping society.
+</p>
+
+<div class="flex justify-center gap-4 mt-8 flex-wrap">
+<a href="#about" class="bg-green-500 px-8 py-3 rounded-full font-semibold hover:scale-105 transition">
+Explore Journey
+</a>
+
+<a href="#contact" class="border border-white px-8 py-3 rounded-full hover:bg-white hover:text-black transition">
+Contact Me
+</a>
+</div>
+
+<div class="grid grid-cols-2 md:grid-cols-4 gap-5 mt-16">
+
+<div class="glass rounded-2xl p-5">
+<h3 class="text-3xl font-bold text-green-400">9</h3>
+<p>Class</p>
+</div>
+
+<div class="glass rounded-2xl p-5">
+<h3 class="text-3xl font-bold text-blue-400">ICSE</h3>
+<p>Board</p>
+</div>
+
+<div class="glass rounded-2xl p-5">
+<h3 class="text-3xl font-bold text-purple-400">ALLEN</h3>
+<p>Student</p>
+</div>
+
+<div class="glass rounded-2xl p-5">
+<h3 class="text-3xl font-bold text-yellow-400">MD</h3>
+<p>Dream</p>
+</div>
+
+</div>
+
+</div>
+</section>
+
+<!-- ABOUT -->
+<section id="about" class="py-24 px-6">
+<div class="max-w-6xl mx-auto">
+
+<h2 class="text-4xl font-bold text-center mb-16" data-aos="fade-up">
+About Me
+</h2>
+
+<div class="glass rounded-3xl p-10" data-aos="zoom-in">
+
+<p class="text-lg leading-8 text-gray-300">
+My name is Shashank. I am a Class 9 ICSE student from Prayagraj and currently studying with ALLEN. My dream is to become a successful doctor and contribute positively to society through healthcare and compassion.
+
+Apart from academics, I love singing. Music helps me stay creative, confident, and motivated. I believe that dedication, discipline, and continuous learning are the keys to achieving great goals.
+</p>
+
+</div>
+
+</div>
+</section>
+
+<!-- DREAM -->
+<section class="py-24 px-6 bg-green-900/10">
+<div class="max-w-6xl mx-auto text-center">
+
+<h2 class="text-4xl font-bold mb-10" data-aos="fade-up">
+🩺 My Dream
+</h2>
+
+<div class="glass p-10 rounded-3xl" data-aos="flip-left">
+<i class="fas fa-heart-pulse text-6xl text-green-400 mb-6"></i>
+
+<h3 class="text-3xl font-bold mb-4">
+Become A Doctor
+</h3>
+
+<p class="text-gray-300 leading-8">
+I aspire to become a doctor who can help people, save lives, and make healthcare accessible. My journey starts today through hard work, scientific learning, and strong foundations.
+</p>
+
+</div>
+
+</div>
+</section>
+
+<!-- EDUCATION -->
+<section id="education" class="py-24 px-6">
+
+<div class="max-w-5xl mx-auto">
+
+<h2 class="text-4xl font-bold text-center mb-16">
+Education Journey
+</h2>
+
+<div class="space-y-8">
+
+<div class="glass p-6 rounded-2xl" data-aos="fade-right">
+📚 Class 9 ICSE Student
+</div>
+
+<div class="glass p-6 rounded-2xl" data-aos="fade-left">
+🏆 ALLEN Foundation Program
+</div>
+
+<div class="glass p-6 rounded-2xl" data-aos="fade-right">
+🎯 Future NEET Aspirant
+</div>
+
+<div class="glass p-6 rounded-2xl" data-aos="fade-left">
+🩺 Future Medical College Student
+</div>
+
+<div class="glass p-6 rounded-2xl" data-aos="fade-right">
+👨‍⚕️ Future Doctor
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- SKILLS -->
+<section id="skills" class="py-24 px-6">
+
+<div class="max-w-5xl mx-auto">
+
+<h2 class="text-4xl font-bold text-center mb-16">
+Skills
+</h2>
+
+<div class="space-y-8">
+
+<div>
+<div class="flex justify-between mb-2">
+<span>Science</span>
+<span>90%</span>
+</div>
+<div class="bg-gray-700 rounded-full h-3">
+<div class="progress-bar bg-green-500 h-3 rounded-full skill" data-width="90%"></div>
+</div>
+</div>
+
+<div>
+<div class="flex justify-between mb-2">
+<span>Mathematics</span>
+<span>85%</span>
+</div>
+<div class="bg-gray-700 rounded-full h-3">
+<div class="progress-bar bg-blue-500 h-3 rounded-full skill" data-width="85%"></div>
+</div>
+</div>
+
+<div>
+<div class="flex justify-between mb-2">
+<span>Communication</span>
+<span>80%</span>
+</div>
+<div class="bg-gray-700 rounded-full h-3">
+<div class="progress-bar bg-purple-500 h-3 rounded-full skill" data-width="80%"></div>
+</div>
+</div>
+
+<div>
+<div class="flex justify-between mb-2">
+<span>Leadership</span>
+<span>25%</span>
+</div>
+<div class="bg-gray-700 rounded-full h-3">
+<div class="progress-bar bg-yellow-500 h-3 rounded-full skill" data-width="75%"></div>
+</div>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- SINGING -->
+<section id="singing" class="py-24 px-6 bg-purple-900/10">
+
+<div class="max-w-6xl mx-auto text-center">
+
+<h2 class="text-4xl font-bold mb-10">
+🎵 Singing Passion
+</h2>
+
+<div class="glass rounded-3xl p-10">
+
+<i class="fas fa-microphone text-6xl text-purple-400 mb-6 floating"></i>
+
+<p class="text-lg text-gray-300 leading-8">
+Music is an important part of my life. Singing helps me express emotions, build confidence, and maintain balance between studies and creativity.
+</p>
+
+<div class="flex justify-center gap-2 mt-10">
+<div class="w-2 bg-purple-500 h-10 animate-pulse"></div>
+<div class="w-2 bg-purple-500 h-16 animate-pulse"></div>
+<div class="w-2 bg-purple-500 h-20 animate-pulse"></div>
+<div class="w-2 bg-purple-500 h-12 animate-pulse"></div>
+<div class="w-2 bg-purple-500 h-16 animate-pulse"></div>
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- ACHIEVEMENTS -->
+<section class="py-24 px-6">
+
+<div class="max-w-6xl mx-auto">
+
+<h2 class="text-4xl font-bold text-center mb-16">
+Achievements & Strengths
+</h2>
+
+<div class="grid md:grid-cols-3 gap-8">
+
+<div class="glass p-8 rounded-3xl text-center">
+🏆 Academic Excellence
+</div>
+
+<div class="glass p-8 rounded-3xl text-center">
+🎤 Singing Enthusiast
+</div>
+
+<div class="glass p-8 rounded-3xl text-center">
+🚀 Future Medical Aspirant
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact" class="py-24 px-6">
+
+<div class="max-w-4xl mx-auto">
+
+<h2 class="text-4xl font-bold text-center mb-16">
+Contact Me
+</h2>
+
+<form class="glass p-10 rounded-3xl space-y-6">
+
+<input
+type="text"
+placeholder="Your Name"
+class="w-full p-4 rounded-xl bg-white/10 border border-white/10 outline-none">
+
+<input
+type="email"
+placeholder="Your Email"
+class="w-full p-4 rounded-xl bg-white/10 border border-white/10 outline-none">
+
+<textarea
+rows="5"
+placeholder="Your Message"
+class="w-full p-4 rounded-xl bg-white/10 border border-white/10 outline-none"></textarea>
+
+<button
+class="bg-green-500 px-8 py-3 rounded-xl font-semibold hover:scale-105 transition">
+Send Message
+</button>
+
+</form>
+
+</div>
+
+</section>
+
+<!-- FOOTER -->
+<footer class="py-8 border-t border-white/10 text-center">
+
+<h3 class="text-2xl font-bold text-green-400">
+SHASHANK
+</h3>
+
+<p class="mt-3 text-gray-400">
+Future Doctor • Singer • ALLEN Student • Prayagraj
+</p>
+
+<div class="flex justify-center gap-6 mt-5 text-xl">
+<i class="fab fa-instagram"></i>
+<i class="fab fa-youtube"></i>
+<i class="fab fa-linkedin"></i>
+</div>
+
+</footer>
+
+<script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+
+<script>
+AOS.init({
+duration:1000,
+once:true
+});
+
+const words=[
+"Future Doctor 🩺",
+"ALLEN Student 📚",
+"Class 9 ICSE Student 🎓",
+"Passionate Singer 🎤"
+];
+
+let i=0;
+let j=0;
+let current='';
+let isDeleting=false;
+
+function type(){
+
+current=words[i];
+
+if(!isDeleting){
+document.getElementById('typing').textContent=
+current.substring(0,j++);
+}else{
+document.getElementById('typing').textContent=
+current.substring(0,j--);
+}
+
+if(j===current.length+1){
+isDeleting=true;
+setTimeout(type,1000);
+return;
+}
+
+if(j===0){
+isDeleting=false;
+i=(i+1)%words.length;
+}
+
+setTimeout(type,isDeleting?50:100);
+}
+
+type();
+
+window.addEventListener('load',()=>{
+document.querySelectorAll('.skill').forEach(skill=>{
+skill.style.width=skill.dataset.width;
+});
+});
+</script>
+
+</body>
+</html>
